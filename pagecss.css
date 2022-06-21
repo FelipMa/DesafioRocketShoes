@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+}
+body{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    position: absolute;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+}
+nav div{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav a{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+nav div form{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+}
+nav button{
+    background-color: transparent;
+    border: none;
+}
+nav input{
+    height: 100%;
+    border: none;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    padding: 9rem;
+}
+.price h1{
+    color: var(--text);
+    font-size: 4rem;
+}
+.price p{
+    color: var(--text-description);
+    margin: 1rem 0;
+    font-weight: 400;
+}
+.price h2{
+    color: var(--text);
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.button{
+    margin-top: 3rem;
+}
+.button a{
+    background-color: var(--button);
+    width: min-content;
+    padding: 2rem 5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.images{
+    background-color: var(--main-background);
+    width: 65%;
+}
+.bigImage{
+    text-align: center;
+    margin-top: 7rem;
+}
+.galery{
+    display: flex;
+    justify-content: space-between;
+}
+.galeryImage{
+    margin: 0 2rem 2rem;
+}
+#selectedImg{
+    border-bottom: solid red;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer div a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+}
+#exploreDiv{
+    background-color: var(--footer);
+    padding: 0 6rem;
+}
+#exploreDiv a{
+    display: flex;
+    flex-direction: row;
+}
+#exploreDiv a{
+    color: white
+}
